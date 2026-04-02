@@ -46,9 +46,9 @@
 
     async function loadData() {
         try {
-            const res = await fetch('data/coffees.json');
+            const res = await fetch('coffee.json');
             const json = await res.json();
-            data = json.coffees;
+            data = json.coffee;
             renderPage();
         }catch(err){
             console.error('Failed to load coffees.json', err); 
